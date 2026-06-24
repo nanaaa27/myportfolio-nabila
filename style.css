@@ -409,7 +409,7 @@ nav {
 }
 .project-card h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 12px; }
 .project-card p { font-size: 0.92rem; line-height: 1.6; color: var(--text-mid); margin-bottom: 20px; }
-.card-tags { display: flex; gap: 8px; }
+.card-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
 .card-tags span { font-size: 0.75rem; color: var(--matcha-dark); background: var(--matcha-mist); padding: 4px 12px; border-radius: 50px; }
 
 /* ===== MEDIA QUERIES (OTOMATIS RESPONSIVE HP) ===== */
@@ -426,5 +426,5 @@ nav {
   .main-section h2 { font-size: 2.2rem; margin-bottom: 30px; }
   .about-container { flex-direction: column; }
   .about-facts { flex-direction: row; flex-wrap: wrap; justify-content: center; }
-  .project-card { text-align: left; }
+  .project-card { box-sizing: border-box; padding: 20px; width: 100%; }
 }
