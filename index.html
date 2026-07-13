@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,27 +12,31 @@
   <nav>
     <div class="nav-logo">✿ NABILA</div>
     <div class="nav-right-btn">
-      <a href="#contact" class="btn-nav-hire">Let's Talk →</a>
+      <div class="lang-toggle" role="group" aria-label="Language switcher">
+        <button type="button" class="lang-btn" data-lang="id">ID</button>
+        <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="btn-nav-hire" data-id="Hubungi Saya →" data-en="Let's Talk →">Let's Talk →</a>
     </div>
   </nav>
 
   <section class="hero" id="home">
     <div class="hero-left">
-      <span class="badge">✦ Available for work</span>
-      <h1>Hi, I'm <span class="highlight">Nabila</span></h1>
+      <span class="badge" data-id="✦ Tersedia untuk bekerja" data-en="✦ Available for work">✦ Available for work</span>
+      <h1><span data-id="Hai, aku " data-en="Hi, I'm ">Hi, I'm </span><span class="highlight">Nabila</span></h1>
       <div class="typewriter-wrap">
-        <p class="role">Frontend Developer<span class="cursor">|</span></p>
+        <p class="role"><span>Frontend Developer</span><span class="cursor">|</span></p>
       </div>
-      <p class="bio">
+      <p class="bio" data-id="Seorang Frontend Developer pemula yang hobi merancang tampilan web bersih, estetik, dan nyaman diakses lewat HP. Selalu bersemangat buat belajar teknologi web baru dan mengasah kemampuan coding." data-en="An entry-level web developer who loves crafting clean, beautiful, and mobile-friendly layouts. Always excited to learn new web technologies and improve my coding skills.">
         An entry-level web developer who loves crafting clean, beautiful, and mobile-friendly layouts. Always excited to learn new web technologies and improve my coding skills.
       </p>
       <div class="meta">
         <span>📍 Indonesia</span>
-        <span>🌿 Available Now</span>
+        <span data-id="🌿 Tersedia Sekarang" data-en="🌿 Available Now">🌿 Available Now</span>
       </div>
       <div class="hero-btns">
-        <a href="#contact" class="btn-primary">→ Hire Me</a>
-        <a href="#" class="btn-outline">↓ Download CV</a>
+        <a href="#contact" class="btn-primary" data-id="→ Kontak Saya" data-en="→ Hire Me">→ Hire Me</a>
+        <a href="#" class="btn-outline" id="downloadCvBtn" data-id="↓ Unduh CV" data-en="↓ Download CV">↓ Download CV</a>
       </div>
     </div>
 
@@ -53,26 +57,31 @@
   </section>
 
   <section class="main-section" id="about">
-    <div class="section-badge">✿ Getting to know me</div>
-    <h2>About Me</h2>
+    <div class="section-badge" data-id="✿ Kenalan sama aku" data-en="✿ Getting to know me">✿ Getting to know me</div>
+    <h2 data-id="Tentang Saya" data-en="About Me">About Me</h2>
     <div class="about-container">
-      <div class="about-card">
-        <div class="sticker-deco">✨</div>
-        <p>
-          Hi there! I am a passionate entry-level developer who started my coding journey in vocational high school. I love exploring layout designs and creating interactive web elements while continuously learning new technologies. When I'm not coding, you can find me exploring new design trends or drinking a warm cup of matcha latte. 🌿
-        </p>
+      <div class="about-card-wrap">
+        <div class="about-card">
+          <div class="sticker-deco">✨</div>
+          <p data-id="Hai! Aku seorang developer pemula yang memulai perjalanan coding sejak di bangku SMK. Aku suka mengeksplorasi desain layout dan menciptakan elemen web yang interaktif sambil terus mempelajari teknologi baru. Dalam bekerja, aku juga sering berkolaborasi dengan AI seperti Gemini dan Claude sebagai asisten coding pribadi—ngebantu banget buat mempercepat proses development dan menjaga struktur kode tetap rapi serta minim bug. Kalau lagi ga ngoding, biasanya aku sibuk mencari tren desain terbaru atau sekadar menikmati secangkir matcha latte. 🌿" data-en="Hi there! I am a passionate entry-level developer who started my coding journey in vocational high school. I love exploring layout designs and creating interactive web elements while continuously learning new technologies. I also enjoy pairing my workflow with AI tools like Gemini and Claude, using them as coding assistants to speed up development and keep my projects clean and minimally buggy. When I'm not coding, you can find me exploring new design trends or drinking a cup of matcha latte. 🌿">
+            Hi there! I am a passionate entry-level developer who started my coding journey in vocational high school. I love exploring layout designs and creating interactive web elements while continuously learning new technologies. I also enjoy pairing my workflow with AI tools like Gemini and Claude, using them as coding assistants to speed up development and keep my projects clean and minimally buggy. When I'm not coding, you can find me exploring new design trends or drinking a cup of matcha latte. 🌿
+          </p>
+        </div>
+        <div class="tech-float tech-html">HTML5</div>
+        <div class="tech-float tech-css">CSS3</div>
+        <div class="tech-float tech-js">Vanilla JS</div>
       </div>
       <div class="about-facts">
-        <div class="fact-item"><span class="fact-icon">🎨</span> UI/UX Minded</div>
-        <div class="fact-item"><span class="fact-icon">💻</span> Code Enthusiast</div>
-        <div class="fact-item"><span class="fact-icon">🍵</span> Matcha Lover</div>
+        <div class="fact-item"><span class="fact-icon">🎨</span> <span>UI/UX Minded</span></div>
+        <div class="fact-item"><span class="fact-icon">💻</span> <span data-id="Penggemar Coding" data-en="Code Enthusiast">Code Enthusiast</span></div>
+        <div class="fact-item"><span class="fact-icon">🍵</span> <span data-id="Pecinta Matcha" data-en="Matcha Lover">Matcha Lover</span></div>
       </div>
     </div>
   </section>
 
     <section class="main-section" id="projects">
-    <div class="section-badge">✦ My creations</div>
-    <h2>My Projects</h2>
+    <div class="section-badge" data-id="✦ Karya saya" data-en="✦ My creations">✦ My creations</div>
+    <h2 data-id="Proyek Saya" data-en="My Projects">My Projects</h2>
     
     <div class="project-grid">
       <div class="project-card" style="text-align : left;">
@@ -81,7 +90,7 @@
         </div>
         <div class="card-sticker">🍵</div>
         <h3>Midori Matcha Cafe</h3>
-        <p>Sebuah website company profile kafe bernuansa Jepang estetik. Dilengkapi dengan sistem pemesanan tempat duduk (booking) fungsional yang terhubung langsung ke email.</p>
+        <p data-id="Sebuah website company profile kafe bernuansa Jepang estetik. Dilengkapi dengan sistem pemesanan tempat duduk (booking) fungsional yang terhubung langsung ke email." data-en="A company profile website for a cafe with an aesthetic Japanese feel. It features a functional booking system that connects directly to email.">A company profile website for a cafe with an aesthetic Japanese feel. It features a functional booking system that connects directly to email. </p>
         <div class="card-tags">
           <span>#HTML5</span>
           <span>#CSS3</span>
@@ -89,7 +98,7 @@
           <span>#Web3Forms</span>
         </div>
         <div class="project-links" style="margin-top: 15px;">
-          <a href="https://nanaaa27.github.io/matchaholic-cafe" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-decoration: none; display: inline-block;">Live Demo ↗</a>
+          <a href="https://nanaaa27.github.io/matchaholic-cafe" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-decoration: none; display: inline-block;" data-id="Demo Langsung ↗" data-en="Live Demo ↗">Live Demo ↗</a>
         </div>
       </div>
 
@@ -101,7 +110,7 @@
 
         <div class="card-sticker">🦕</div>
         <h3>Virtual Pet Mini-Game</h3>
-        <p>Aplikasi web interaktif berbasis JavaScript untuk merawat hewan peliharaan virtual. Dilengkapi fitur mini-game sampingan, manajemen koin, sistem level/XP, penyimpanan data otomatis dengan LocalStorage, serta fitur Global Dark Mode.</p>
+        <p data-id="Aplikasi web interaktif berbasis JavaScript untuk merawat hewan peliharaan virtual. Dilengkapi fitur mini-game sampingan, manajemen koin, sistem level/XP, penyimpanan data otomatis dengan LocalStorage, serta fitur Global Dark Mode." data-en="An interactive JavaScript-based web application for caring for a virtual pet. It features side mini-games, coin management, a level/XP system, automatic data saving with LocalStorage, and a Global Dark Mode.">An interactive JavaScript-based web application for caring for a virtual pet. It features side mini-games, coin management, a level/XP system, automatic data saving with LocalStorage, and a Global Dark Mode.</p>
         
         <div class="card-tags" style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-start;">
           <span>#HTML5</span>
@@ -112,7 +121,7 @@
         </div>
 
         <div class="project-links" style="margin-top: 15px; text-align: left;">
-          <a href="https://nanaaa27.github.io/mikomydino-pet/" class="btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-decoration: none; display: inline-block;">Live Demo ↗</a>
+          <a href="https://nanaaa27.github.io/mikomydino-pet/" class="btn-primary" style="padding: 8px 16px; font-size: 0.9rem; text-decoration: none; display: inline-block;" data-id="Demo Langsung ↗" data-en="Live Demo ↗">Live Demo ↗</a>
         </div>
 
       </div>
@@ -123,18 +132,42 @@
 
 
   <section class="main-section" id="services">
-    <div class="section-badge">🌿 What I do</div>
-    <h2>Services</h2>
-    <p>Here is what I can do for you: Web Design, Frontend Development, and Mobile Responsive Layouts.</p>
+    <div class="section-badge" data-id="🌿 Yang saya kerjakan" data-en="🌿 What I do">🌿 What I do</div>
+    <h2 data-id="Layanan" data-en="Services">Services</h2>
+    <p class="services-intro" data-id="Aku senang membantu mewujudkan ide melalui kode yang rapi dan desain yang matang. Berikut hal-hal yang bisa aku bantu:" data-en="I love to help bring ideas to life with clean code and thoughtful design. Here's what I can do for you:">I love to help bring ideas to life with clean code and thoughtful design. Here's what I can do for you:</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-sticker">🎨</div>
+        <h3 data-id="Desain Web" data-en="Web Design">Web Design</h3>
+        <p data-id="Merancang antarmuka web yang bersih, estetik, dan user-friendly agar sesuai dengan kepribadian brand. Fokus utamaku ada pada kejelasan tata letak, pemilihan warna, dan keterbacaan teks." data-en="Designing clean, aesthetic, and user-friendly interfaces that reflect the brand's personality, with a strong focus on layout, color, and readability.">Designing clean, aesthetic, and user-friendly interfaces that reflect the brand's personality, with a strong focus on layout, color, and readability.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-sticker">💻</div>
+        <h3>Frontend Development</h3>
+        <p data-id="Mentransformasi desain visual menjadi website fungsional dan interaktif menggunakan HTML5, CSS3, dan Vanilla JavaScript. Kode ditulis secara rapi dan mudah dirawat, dikombinasikan dengan pemanfaatan AI tools (Gemini & Claude) agar proses development berjalan lebih efisien." data-en="Transforming visual designs into functional and interactive websites using HTML5, CSS3, and vanilla JavaScript. The code is cleanly written and easy to maintain, combined with the use of AI tools (Gemini & Claude) to streamline the development process.">Transforming visual designs into functional and interactive websites using HTML5, CSS3, and vanilla JavaScript. The code is cleanly written and easy to maintain, combined with the use of AI tools (Gemini & Claude) to streamline the development process.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-sticker">📱</div>
+        <h3>Mobile Responsive Design</h3>
+        <p data-id="Memastikan setiap proyek web tampil konsisten dan berjalan mulus di berbagai ukuran layar—mulai dari monitor desktop yang besar hingga layar HP yang minimalis." data-en="Ensuring every web project looks consistent and runs smoothly across a variety of screen sizes—from large desktop monitors to minimalist mobile screens.">Ensuring every web project looks consistent and runs smoothly across a variety of screen sizes—from large desktop monitors to minimalist mobile screens.</p>
+      </div>
+    </div>
   </section>
 
   <section class="main-section" id="contact">
     <div class="section-badge">💌 Let's talk</div>
-    <h2>Get In Touch</h2>
-    <p>Interested in working together? Drop me a message at <strong style="color: var(--matcha-dark);">nabilabilaa94@gmail.com</strong> or find me on my social media links below!</p>
+    <h2 data-id="Hubungi Saya" data-en="Get In Touch">Get In Touch</h2>
+    <p>
+      <span data-id="Tertarik untuk bekerja sama? Kirim pesan di" data-en="Interested in working together? Drop me a message at">Interested in working together? Drop me a message at</span>
+      <strong style="color: var(--matcha-dark);">nabilabilaa94@gmail.com</strong>
+      <span data-id="atau temukan aku di media sosial melalui tautan di bawah ini!" data-en="or find me on my social media links below!">or find me on my social media links below!</span>
+    </p>
     <br>
     <div class="socials">
-        <span>Follow me:</span>
+        <span data-id="Ikuti aku:" data-en="Follow me:">Follow me:</span>
         <a href="https://github.com/nanaaa27" title="GitHub">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
@@ -147,5 +180,21 @@
       </div>
   </section>
 
+  <!-- CV DOWNLOAD MODAL -->
+  <div class="modal-overlay" id="cvModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+      <button type="button" class="modal-close" id="cvModalClose" aria-label="Close">✕</button>
+      <div class="modal-icon">📄</div>
+      <h3 id="cvModalTitle" data-id="Unduh CV Saya" data-en="Download My CV">Download My CV</h3>
+      <p data-id="Kamu akan mengunduh CV Nabila dalam format PDF. Semoga membantu proses rekrutmennya! 🌿" data-en="You're about to download Nabila's CV in PDF format. Hope it helps with the hiring process! 🌿">You're about to download Nabila's CV in PDF format. Hope it helps with the hiring process! 🌿</p>
+      <div class="modal-actions">
+        <a href="Nabila-CV.pdf" download class="btn-primary" id="cvDownloadBtn" data-id="⬇ Unduh Sekarang" data-en="⬇ Download Now">⬇ Download Now</a>
+        <button type="button" class="btn-outline" id="cvModalCancel" data-id="Batal" data-en="Cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
+
